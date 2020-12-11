@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2, 
+  "name": "My Extension",
+  "version": "1.0",
+  "content_scripts":[
+    {
+      "matches":[
+        "https://www.google.com/*",
+        "http://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=380793906c3944b38079a72301b2928d"
+      ],
+  
+      "js":["content.js"]
+    
+    }
+  ],
+  "chrome_url_overrides":{
+		"newtab":"tab.html"
+	}
+}
